@@ -1,0 +1,35 @@
+# Environments
+.env
+venv/
+.venv/
+
+# ChromaDB data
+chroma_data/
+
+# Analytics
+analytics_data/
+
+# Logs
+logs/
+gioco/quiz_data.json
+gioco/wa_sessions.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

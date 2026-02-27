@@ -1,0 +1,59 @@
+nohup: ignoring input
+INFO:     Started server process [74498]
+INFO:     Waiting for application startup.
+2026-02-26 20:03:47 | INFO     | app.main | ============================================================
+2026-02-26 20:03:47 | INFO     | app.main | 🏠 Casa di Quartiere Tuturano — AI Assistant (Telegram)
+2026-02-26 20:03:47 | INFO     | app.main | ============================================================
+2026-02-26 20:03:47 | INFO     | app.rag | 🚀 Inizializzazione pipeline RAG...
+2026-02-26 20:03:47 | INFO     | app.rag | 📦 Caricamento modello embedding: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-02-26 20:03:47 | INFO     | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-02-26 20:03:47 | INFO     | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-02-26 20:03:50 | INFO     | app.rag | ✅ Modello embedding caricato
+2026-02-26 20:03:50 | INFO     | app.rag | 📦 Inizializzazione ChromaDB in: chroma_data
+2026-02-26 20:03:50 | ERROR    | chromadb.telemetry.product.posthog | Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-26 20:03:50 | ERROR    | chromadb.telemetry.product.posthog | Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-26 20:03:50 | INFO     | app.rag | ✅ ChromaDB pronto — 45 documenti in collezione
+2026-02-26 20:03:50 | INFO     | httpx | HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-02-26 20:03:50 | INFO     | app.rag | ✅ Ollama connesso — modello: qwen2.5:1.5b
+2026-02-26 20:03:50 | INFO     | app.rag | 🎉 Pipeline RAG inizializzato con successo!
+2026-02-26 20:03:50 | INFO     | app.rag | 📂 Trovati 8 file nel knowledge base
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.68it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.67it/s]
+2026-02-26 20:03:50 | INFO     | app.rag |   ✅ corsi_attivita.json: 6 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.56it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.54it/s]
+2026-02-26 20:03:50 | INFO     | app.rag |   ✅ costi_tariffe.json: 5 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.10it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.09it/s]
+2026-02-26 20:03:51 | INFO     | app.rag |   ✅ informazioni_generali.json: 8 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.75it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.74it/s]
+2026-02-26 20:03:51 | INFO     | app.rag |   ✅ spazi.json: 6 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.07it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  9.06it/s]
+2026-02-26 20:03:51 | INFO     | app.rag |   ✅ prenotazioni.json: 5 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.79it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  7.78it/s]
+2026-02-26 20:03:51 | INFO     | app.rag |   ✅ regolamento.json: 6 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 12.09it/s]
+2026-02-26 20:03:51 | INFO     | app.rag |   ✅ eventi.json: 4 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00, 10.47it/s]
+2026-02-26 20:03:51 | INFO     | app.rag |   ✅ contatti.json: 5 entries caricate
+2026-02-26 20:03:51 | INFO     | app.rag | 📊 Totale entries caricate: 45
+2026-02-26 20:03:51 | INFO     | app.main | 📚 Knowledge base: 45 entries caricate
+/home/xyz/.gemini/antigravity/scratch/casa_quartiere_bot/gioco/wizard.py:380: PTBUserWarning: If 'per_message=False', 'CallbackQueryHandler' will not be tracked for every message. Read this FAQ entry to learn more about the per_* settings: https://github.com/python-telegram-bot/python-telegram-bot/wiki/Frequently-Asked-Questions#what-do-the-per_-settings-in-conversationhandler-do.
+  return ConversationHandler(
+2026-02-26 20:03:51 | INFO     | app.telegram_bot | ✅ Bot Telegram configurato con tutti gli handler
+2026-02-26 20:03:51 | INFO     | app.main | 🔄 Modalita' POLLING — nessun URL pubblico necessario
+2026-02-26 20:03:51 | INFO     | httpx | HTTP Request: POST https://api.telegram.org/bot8593041029:AAEhY6s2dmMNWZm6YRX__6VZISaomS1Wrec/getMe "HTTP/1.1 200 OK"
+2026-02-26 20:03:52 | INFO     | httpx | HTTP Request: POST https://api.telegram.org/bot8593041029:AAEhY6s2dmMNWZm6YRX__6VZISaomS1Wrec/setMyCommands "HTTP/1.1 200 OK"
+2026-02-26 20:03:52 | INFO     | app.telegram_bot | ✅ Menu comandi Telegram impostato
+2026-02-26 20:03:52 | INFO     | telegram.ext.Application | Application started
+2026-02-26 20:03:52 | INFO     | httpx | HTTP Request: POST https://api.telegram.org/bot8593041029:AAEhY6s2dmMNWZm6YRX__6VZISaomS1Wrec/deleteWebhook "HTTP/1.1 200 OK"
+2026-02-26 20:03:52 | INFO     | app.main | ✅ Bot Telegram in polling — in attesa di messaggi...
+2026-02-26 20:03:52 | INFO     | httpx | HTTP Request: POST https://api.telegram.org/bot8593041029:AAEhY6s2dmMNWZm6YRX__6VZISaomS1Wrec/getMe "HTTP/1.1 200 OK"
+2026-02-26 20:03:52 | INFO     | app.main | 🤖 Bot attivo: @tuturanobot (Tutulacchi)
+2026-02-26 20:03:52 | INFO     | app.main | 🟢 Sistema pronto!
+2026-02-26 20:03:52 | INFO     | app.main | 📱 WhatsApp Cloud API attivo — webhook: /whatsapp/webhook
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+2026-02-26 20:03:52 | INFO     | httpx | HTTP Request: POST https://api.telegram.org/bot8593041029:AAEhY6s2dmMNWZm6YRX__6VZISaomS1Wrec/getUpdates "HTTP/1.1 200 OK"
+2026-02-26 20:03:52 | INFO     | telegram.ext.Application | Application is stopping. This might take a moment.
+2026-02-26 20:03:52 | INFO     | telegram.ext.Application | Application.stop() complete
+2026-02-26 20:03:52 | INFO     | app.main | 🔴 Sistema arrestato
+INFO:     Application shutdown complete.

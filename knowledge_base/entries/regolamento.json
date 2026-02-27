@@ -1,0 +1,114 @@
+{
+    "categoria": "regolamento",
+    "descrizione": "Regolamento interno e norme di comportamento della Casa di Quartiere.",
+    "entries": [
+        {
+            "id": "regol_001",
+            "categoria": "regolamento",
+            "priorita": "alta",
+            "domanda": "Quali sono le regole di comportamento nella Casa di Quartiere?",
+            "risposta": "All'interno della Casa di Quartiere di Tuturano si chiede a tutti i frequentatori di: rispettare gli altri utenti e il personale, mantenere la pulizia degli spazi utilizzati, non arrecare danni alle attrezzature e agli arredi, rispettare gli orari di apertura e chiusura, non disturbare le attivita' in corso nelle sale adiacenti. Il rispetto reciproco e la cura degli spazi comuni sono alla base della convivenza nella struttura.",
+            "keywords": [
+                "regole",
+                "comportamento",
+                "regolamento",
+                "norme",
+                "divieti",
+                "cosa si puo' fare"
+            ],
+            "fonte": "Regolamento interno",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "regol_002",
+            "categoria": "regolamento",
+            "priorita": "alta",
+            "domanda": "Si puo' fumare nella Casa di Quartiere?",
+            "risposta": "No, e' vietato fumare all'interno di tutti gli spazi chiusi della Casa di Quartiere, in conformita' con la normativa vigente. Potrebbe essere disponibile un'area fumatori esterna designata. Contattare la segreteria per maggiori informazioni.",
+            "keywords": [
+                "fumare",
+                "fumo",
+                "sigarette",
+                "vietato fumare",
+                "area fumatori"
+            ],
+            "fonte": "Regolamento interno",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "regol_003",
+            "categoria": "regolamento",
+            "priorita": "media",
+            "domanda": "I bambini possono entrare senza accompagnatore?",
+            "risposta": "I minori devono essere sempre accompagnati da un adulto responsabile per accedere alla Casa di Quartiere, a meno che non partecipino ad attivita' organizzate con supervisione (come il doposcuola o i laboratori per bambini). Per le attivita' con supervisione, l'eta' minima per la partecipazione autonoma viene comunicata al momento dell'iscrizione.",
+            "keywords": [
+                "bambini",
+                "minori",
+                "accompagnatore",
+                "senza genitori",
+                "supervisione",
+                "eta' minima"
+            ],
+            "fonte": "Regolamento interno",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "regol_004",
+            "categoria": "regolamento",
+            "priorita": "media",
+            "domanda": "Si possono portare animali nella Casa di Quartiere?",
+            "risposta": "Per la politica sull'accesso degli animali alla Casa di Quartiere, contattare la segreteria. In generale, nelle strutture pubbliche l'accesso e' consentito ai cani guida per non vedenti. Per altri animali domestici, verificare le condizioni specifiche con il personale.",
+            "keywords": [
+                "animali",
+                "cani",
+                "gatti",
+                "animali domestici",
+                "pet"
+            ],
+            "fonte": "Regolamento interno",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "regol_005",
+            "categoria": "regolamento",
+            "priorita": "alta",
+            "domanda": "Chi e' responsabile in caso di danni alle attrezzature?",
+            "risposta": "Chi utilizza gli spazi e le attrezzature della Casa di Quartiere e' responsabile del loro corretto utilizzo e della loro restituzione nello stato in cui li ha ricevuti. In caso di danni accidentali o causati da negligenza, l'utilizzatore e' tenuto al risarcimento secondo quanto previsto dal regolamento interno. Segnalare immediatamente qualsiasi danno al personale.",
+            "keywords": [
+                "danni",
+                "responsabilita'",
+                "rompere",
+                "attrezzature",
+                "risarcimento",
+                "guasto"
+            ],
+            "fonte": "Regolamento interno",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "ilcurro_reg_01",
+            "categoria": "regolamento",
+            "priorita": "media",
+            "domanda": "Quali sono i valori o il motto che guidano IL CURRO-APS?",
+            "risposta": "Il motto principale dell'associazione è 'Muoviamo la Cultura'. 'IL CURRO-APS' si basa su principi di diffusione di bellezza, avendo come regola quella di esplorare la cultura a 360 gradi. Sostiene l'individuo nel rapporto con l'ambiente, con se stesso e con gli altri, valorizzandone le potenzialità attraverso formazione e promozione sociale.",
+            "keywords": [
+                "regolamento",
+                "valori",
+                "motto",
+                "il curro",
+                "curro",
+                "principi",
+                "mission",
+                "visione"
+            ],
+            "fonte": "Brochure IL CURRO-APS",
+            "data_aggiornamento": "2026-02-26",
+            "attiva": true
+        }
+    ]
+}

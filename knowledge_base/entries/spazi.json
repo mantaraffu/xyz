@@ -1,0 +1,123 @@
+{
+    "categoria": "spazi",
+    "descrizione": "Spazi disponibili nella Casa di Quartiere di Tuturano: sale, aule, spazi esterni.",
+    "entries": [
+        {
+            "id": "spazi_001",
+            "categoria": "spazi",
+            "priorita": "alta",
+            "domanda": "Quali spazi sono disponibili nella Casa di Quartiere?",
+            "risposta": "La Casa di Quartiere di Tuturano dispone di diversi spazi utilizzabili dai cittadini e dalle associazioni: una sala polivalente per eventi e riunioni, aule per corsi e laboratori, uno spazio per attivita' ricreative e di socializzazione, e aree esterne. Ogni spazio puo' essere prenotato secondo le modalita' stabilite dal regolamento interno. Per un elenco completo con capienza e dotazioni, contattare la segreteria.",
+            "keywords": [
+                "spazi",
+                "sale",
+                "aule",
+                "ambienti",
+                "dove",
+                "stanze",
+                "locale",
+                "struttura",
+                "capienza",
+                "posti",
+                "quante persone"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true,
+            "note_interne": "Aggiornare con i nomi e le caratteristiche specifiche di ogni spazio"
+        },
+        {
+            "id": "spazi_002",
+            "categoria": "spazi",
+            "priorita": "alta",
+            "domanda": "La Casa di Quartiere e' accessibile alle persone con disabilita'?",
+            "risposta": "La Casa di Quartiere di Tuturano e' progettata per essere accessibile a tutti. Per informazioni specifiche sulla presenza di rampe, ascensori, bagni accessibili e parcheggi riservati, contattare la segreteria che potra' fornire tutti i dettagli sull'accessibilita' della struttura.",
+            "keywords": [
+                "accessibilita'",
+                "disabili",
+                "carrozzina",
+                "rampe",
+                "ascensore",
+                "bagno disabili",
+                "barriere architettoniche"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "spazi_003",
+            "categoria": "spazi",
+            "priorita": "media",
+            "domanda": "C'e' il Wi-Fi nella Casa di Quartiere?",
+            "risposta": "Per informazioni sulla disponibilita' della connessione Wi-Fi e le modalita' di accesso alla rete, contattare la segreteria della Casa di Quartiere.",
+            "keywords": [
+                "wifi",
+                "wi-fi",
+                "internet",
+                "connessione",
+                "rete"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "spazi_004",
+            "categoria": "spazi",
+            "priorita": "media",
+            "domanda": "C'e' parcheggio vicino alla Casa di Quartiere?",
+            "risposta": "Si', nelle vicinanze della Casa di Quartiere sono disponibili posti auto gratuiti. Per indicazioni precise sul parcheggio piu' vicino, contattare la segreteria.",
+            "keywords": [
+                "parcheggio",
+                "auto",
+                "macchina",
+                "dove parcheggiare",
+                "posto auto"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "spazi_005",
+            "categoria": "spazi",
+            "priorita": "alta",
+            "domanda": "Che capienza hanno le vostre sale? Quante persone possono entrare?",
+            "risposta": "La Casa di Quartiere dispone di una sala polivalente che puo' ospitare fino a 100 persone e di aule piu' piccole con una capienza di 20-30 posti a sedere. Per le dimensioni esatte e per prenotare in base alle proprie esigenze, vi invitiamo a contattare la segreteria.",
+            "keywords": [
+                "capienza",
+                "posti a sedere",
+                "quante persone",
+                "grandezza",
+                "persone",
+                "massimo",
+                "metri"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "ilcurro_spazi_01",
+            "categoria": "spazi",
+            "priorita": "media",
+            "domanda": "In quali spazi opera l'Associazione IL CURRO-APS?",
+            "risposta": "L'Associazione 'IL CURRO-APS' sottolinea un 'attaccamento viscerale alla propria terra'. Opera sul territorio collaborando in rete con altre associazioni a ogni livello, essendo anche refersente al CSV di Brindisi-Lecce. Per iniziative specifiche e relative location fisiche (o l'uso degli spazi della Casa di Quartiere), contattali ai numeri 349 8195650, 347 3795435.",
+            "keywords": [
+                "spazi",
+                "luoghi",
+                "dove operano",
+                "il curro",
+                "curro",
+                "territorio",
+                "sede",
+                "brindisi",
+                "lecce"
+            ],
+            "fonte": "Brochure IL CURRO-APS",
+            "data_aggiornamento": "2026-02-26",
+            "attiva": true
+        }
+    ]
+}

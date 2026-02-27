@@ -1,0 +1,167 @@
+{
+    "categoria": "informazioni_generali",
+    "descrizione": "Informazioni generali sulla Casa di Quartiere di Tuturano: cos'e', dove si trova, orari, mission.",
+    "entries": [
+        {
+            "id": "info_001",
+            "categoria": "informazioni_generali",
+            "priorita": "alta",
+            "domanda": "Cos'e' la Casa di Quartiere di Tuturano?",
+            "risposta": "La Casa di Quartiere di Tuturano e' uno spazio pubblico polifunzionale situato nel cuore di Tuturano, frazione di Brindisi (Puglia). E' un punto di riferimento per la comunita' locale: un luogo di incontro, aggregazione e partecipazione aperto a tutti i cittadini. La struttura ospita attivita' culturali, corsi di formazione, laboratori creativi, eventi sociali e servizi al cittadino. La mission e' promuovere la coesione sociale, l'inclusione e la valorizzazione del territorio di Tuturano.",
+            "keywords": [
+                "casa di quartiere",
+                "tuturano",
+                "cos'e'",
+                "cosa e'",
+                "informazioni",
+                "mission",
+                "chi siete"
+            ],
+            "fonte": "Statuto Casa di Quartiere",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "info_002",
+            "categoria": "informazioni_generali",
+            "priorita": "alta",
+            "domanda": "Dove si trova la Casa di Quartiere di Tuturano? Come ci arrivo?",
+            "risposta": "La Casa di Quartiere si trova a Tuturano, frazione di Brindisi, in provincia di Brindisi (BR), Puglia. Per raggiungerla: in auto, percorrere la SS7 in direzione Tuturano e seguire le indicazioni per il centro del paese. Il parcheggio gratuito e' disponibile nelle vicinanze. Per informazioni piu' precise sull'indirizzo esatto, contattare la segreteria.",
+            "keywords": [
+                "dove",
+                "indirizzo",
+                "come arrivare",
+                "posizione",
+                "mappa",
+                "parcheggio",
+                "tuturano"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "info_003",
+            "categoria": "informazioni_generali",
+            "priorita": "alta",
+            "domanda": "Quali sono gli orari di apertura della Casa di Quartiere?",
+            "risposta": "IMPORTANTE: gli orari definitivi devono essere confermati dalla segreteria della Casa di Quartiere. In genere, le strutture come questa sono aperte dal lunedi' al venerdi' in orario mattutino e pomeridiano, con aperture speciali il sabato per eventi e attivita'. Per conoscere gli orari aggiornati, contattare direttamente la Casa di Quartiere.",
+            "keywords": [
+                "orari",
+                "apertura",
+                "quando apre",
+                "quando chiude",
+                "aperto",
+                "chiuso",
+                "sabato",
+                "domenica",
+                "festivi"
+            ],
+            "fonte": "Da confermare con la segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true,
+            "note_interne": "ATTENZIONE: aggiornare con gli orari ufficiali appena disponibili"
+        },
+        {
+            "id": "info_004",
+            "categoria": "informazioni_generali",
+            "priorita": "alta",
+            "domanda": "Chi gestisce la Casa di Quartiere di Tuturano?",
+            "risposta": "La Casa di Quartiere di Tuturano e' gestita in collaborazione con il Comune di Brindisi e le associazioni del territorio. Per conoscere nel dettaglio l'ente gestore e i referenti, contattare la segreteria della struttura.",
+            "keywords": [
+                "chi gestisce",
+                "gestione",
+                "ente",
+                "associazione",
+                "comune",
+                "responsabile"
+            ],
+            "fonte": "Da confermare",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "info_005",
+            "categoria": "informazioni_generali",
+            "priorita": "media",
+            "domanda": "Qual e' la storia della Casa di Quartiere di Tuturano?",
+            "risposta": "La Casa di Quartiere nasce dalla volonta' di creare uno spazio comunitario per i cittadini di Tuturano, una delle frazioni piu' importanti di Brindisi. Il progetto si inserisce nel piu' ampio contesto delle politiche di rigenerazione urbana e inclusione sociale della Regione Puglia. La struttura rappresenta un punto di riferimento per il quartiere, un luogo dove tradizione e innovazione si incontrano al servizio della comunita'.",
+            "keywords": [
+                "storia",
+                "origini",
+                "progetto",
+                "quando nasce",
+                "rigenerazione",
+                "quartiere"
+            ],
+            "fonte": "Documentazione progetto",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "ilcurro_info_01",
+            "categoria": "informazioni_generali",
+            "priorita": "alta",
+            "domanda": "Cos'è l'Associazione IL CURRO-APS e qual è la sua storia?",
+            "risposta": "L'Associazione di Promozione Sociale 'IL CURRO-APS' è nata nel 2015, fortemente voluta dai suoi fondatori, e ha scelto come simbolo un antico giocattolo (il curro, appunto) per sottolineare il suo continuo movimento e l'attaccamento viscerale alla propria terra. È iscritta ai Registri Regionali delle Associazioni di Promozione Sociale (n. 363/2021) e al CSV di Brindisi-Lecce.",
+            "keywords": [
+                "storia",
+                "il curro",
+                "curro",
+                "cos'è",
+                "chi siete",
+                "fondazione",
+                "simbolo",
+                "giocattolo",
+                "registri"
+            ],
+            "fonte": "Brochure IL CURRO-APS",
+            "data_aggiornamento": "2026-02-26",
+            "attiva": true
+        },
+        {
+            "id": "ilcurro_sostegno_01",
+            "categoria": "informazioni_generali",
+            "priorita": "alta",
+            "domanda": "Come posso sostenere l'Associazione IL CURRO-APS? Come donare il 5x1000?",
+            "risposta": "Puoi sostenere l'Associazione 'IL CURRO-APS' effettuando una donazione tramite IBAN: IT 76 I 03069 09606 100000177835. Le donazioni prevedono vantaggi fiscali: puoi detrarre l'importo al 30% (max 30.000€) o dedurlo entro il 10% del reddito complessivo. Inoltre, puoi destinare gratuitamente il tuo 5x1000 inserendo il Codice Fiscale 91080330748 e la tua firma nello spazio apposito della dichiarazione dei redditi (730, CUD, Modello Unico). L'obiettivo è combattere la povertà culturale.",
+            "keywords": [
+                "donazione",
+                "iban",
+                "contributo",
+                "sostenere",
+                "5x1000",
+                "cinque per mille",
+                "codice fiscale",
+                "beneficenza",
+                "detrazione",
+                "deduzione"
+            ],
+            "fonte": "Brochure IL CURRO-APS",
+            "data_aggiornamento": "2026-02-26",
+            "attiva": true
+        },
+        {
+            "id": "ilcurro_statuto_01",
+            "categoria": "informazioni_generali",
+            "priorita": "media",
+            "domanda": "Quali sono le finalità citate nello statuto dell'Associazione IL CURRO-APS?",
+            "risposta": "L'Associazione opera senza scopo di lucro per finalità civiche, solidaristiche e di utilità sociale. Svolge funzioni di educazione, formazione, salvaguardia dell'ambiente e tutela del paesaggio. Organizza attività culturali e artistiche, attività per contrastare la povertà educativa, sport, beneficenza e si batte per la promozione dei diritti umani, civili e della pace.",
+            "keywords": [
+                "statuto",
+                "finalità",
+                "scopo",
+                "utilità sociale",
+                "diritti",
+                "ambiente",
+                "educazione",
+                "povertà educativa",
+                "pace",
+                "legalità"
+            ],
+            "fonte": "Brochure IL CURRO-APS",
+            "data_aggiornamento": "2026-02-26",
+            "attiva": true
+        }
+    ]
+}

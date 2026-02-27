@@ -1,0 +1,121 @@
+{
+    "categoria": "corsi_attivita",
+    "descrizione": "Corsi e attivita' organizzati dalla Casa di Quartiere di Tuturano.",
+    "entries": [
+        {
+            "id": "corsi_001",
+            "categoria": "corsi_attivita",
+            "priorita": "alta",
+            "domanda": "Quali corsi e attivita' sono disponibili alla Casa di Quartiere?",
+            "risposta": "La Casa di Quartiere di Tuturano offre una varieta' di corsi e attivita' per tutte le eta': laboratori creativi, corsi di formazione, attivita' sportive leggere, incontri culturali, doposcuola per bambini e ragazzi, e attivita' di socializzazione per anziani. Il programma viene aggiornato stagionalmente (settembre, gennaio e giugno). Per il catalogo completo dei corsi attivi con orari, costi e modalita' di iscrizione, contattare la segreteria o seguire i canali social della struttura.",
+            "keywords": [
+                "corsi",
+                "attivita'",
+                "laboratori",
+                "cosa fare",
+                "programma",
+                "offerta",
+                "formazione"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true,
+            "note_interne": "IMPORTANTE: aggiornare con l'elenco reale dei corsi attivi ogni stagione"
+        },
+        {
+            "id": "corsi_002",
+            "categoria": "corsi_attivita",
+            "priorita": "alta",
+            "domanda": "Come posso iscrivermi a un corso alla Casa di Quartiere?",
+            "risposta": "Per iscriversi a un corso alla Casa di Quartiere di Tuturano, i passaggi sono solitamente i seguenti: 1) Consultare il programma dei corsi attivi. 2) Contattare la segreteria per verificare la disponibilita' di posti. 3) Compilare il modulo di iscrizione. 4) Effettuare il pagamento della quota di iscrizione, se prevista. Per informazioni dettagliate su un corso specifico, contattare direttamente la segreteria.",
+            "keywords": [
+                "iscriversi",
+                "iscrizione",
+                "partecipare",
+                "come fare",
+                "modulo",
+                "corso"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "corsi_003",
+            "categoria": "corsi_attivita",
+            "priorita": "media",
+            "domanda": "Ci sono attivita' per bambini alla Casa di Quartiere?",
+            "risposta": "Si', la Casa di Quartiere organizza regolarmente attivita' dedicate ai bambini e ai ragazzi, tra cui laboratori creativi, doposcuola, attivita' ludiche e ricreative. Le attivita' per minori si svolgono sotto la supervisione di educatori qualificati. Per conoscere il programma aggiornato delle attivita' per bambini, contattare la segreteria.",
+            "keywords": [
+                "bambini",
+                "ragazzi",
+                "minori",
+                "doposcuola",
+                "giochi",
+                "attivita' bambini",
+                "figli",
+                "piccoli"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "corsi_004",
+            "categoria": "corsi_attivita",
+            "priorita": "media",
+            "domanda": "Ci sono attivita' per anziani alla Casa di Quartiere?",
+            "risposta": "Si', la Casa di Quartiere propone attivita' pensate per le persone anziane, tra cui momenti di socializzazione, attivita' ricreative e incontri culturali. Queste iniziative mirano a combattere l'isolamento sociale e a valorizzare le competenze e le storie degli anziani del quartiere. Per informazioni, contattare la segreteria.",
+            "keywords": [
+                "anziani",
+                "terza eta'",
+                "pensionati",
+                "attivita' anziani",
+                "socializzazione"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "ilcurro_att_01",
+            "categoria": "corsi_attivita",
+            "priorita": "alta",
+            "domanda": "Quali attività svolge l'Associazione IL CURRO-APS?",
+            "risposta": "L'Associazione 'IL CURRO-APS' si muove a 360 gradi su tutto quello che è cultura, sostenendo l'individuo nel rapporto con gli altri, l'ambiente e sé stesso. Realizza attività di formazione e promozione sociale per sviluppare le potenzialità di ognuno e migliorare la vita individuale e sociale di tutti. Inoltre, nomina Soci Onorari figure di spicco che contribuiscono alla diffusione della bellezza.",
+            "keywords": [
+                "attività",
+                "il curro",
+                "curro",
+                "formazione",
+                "cultura",
+                "promozione",
+                "soci onorari",
+                "fare",
+                "corsi"
+            ],
+            "fonte": "Brochure IL CURRO-APS",
+            "data_aggiornamento": "2026-02-26",
+            "attiva": true
+        },
+        {
+            "id": "ilcurro_collaboratori_01",
+            "categoria": "corsi_attivita",
+            "priorita": "media",
+            "domanda": "Chi sono i collaboratori e i volontari dell'Associazione IL CURRO-APS?",
+            "risposta": "L'Associazione si avvale sia di Soci Onorari (eccellenze nel loro campo che permettono la realizzazione e la diffusione della cultura) sia di Soci Volontari. Questi ultimi contribuiscono ai servizi attivi offerti, includendo artisti capaci di soddisfare molteplici committenze artistiche.",
+            "keywords": [
+                "collaboratori",
+                "volontari",
+                "soci onorari",
+                "soci volontari",
+                "artisti",
+                "offrire servizi",
+                "aiuto"
+            ],
+            "fonte": "Brochure IL CURRO-APS",
+            "data_aggiornamento": "2026-02-26",
+            "attiva": true
+        }
+    ]
+}

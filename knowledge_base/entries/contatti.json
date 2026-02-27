@@ -1,0 +1,105 @@
+{
+    "categoria": "contatti",
+    "descrizione": "Contatti e referenti della Casa di Quartiere di Tuturano.",
+    "entries": [
+        {
+            "id": "contatti_001",
+            "categoria": "contatti",
+            "priorita": "alta",
+            "domanda": "Come posso contattare la Casa di Quartiere di Tuturano?",
+            "risposta": "Per contattare la Casa di Quartiere di Tuturano puoi: presentarti di persona durante gli orari di apertura, oppure contattare la segreteria tramite i canali ufficiali. Per numeri di telefono, email e pagine social aggiornate, chiedi alla segreteria o consulta la pagina social ufficiale della Casa di Quartiere.",
+            "keywords": [
+                "contatti",
+                "telefono",
+                "email",
+                "come contattare",
+                "numero",
+                "chiamare",
+                "scrivere"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true,
+            "note_interne": "IMPORTANTE: inserire numero di telefono e email reali appena disponibili"
+        },
+        {
+            "id": "contatti_002",
+            "categoria": "contatti",
+            "priorita": "alta",
+            "domanda": "Qual e' il numero di telefono della Casa di Quartiere?",
+            "risposta": "Il numero di telefono della Casa di Quartiere di Tuturano sara' comunicato non appena disponibile. Nel frattempo, puoi presentarti di persona durante gli orari di apertura o seguire i canali social per restare aggiornato.",
+            "keywords": [
+                "telefono",
+                "numero",
+                "chiamare",
+                "telefonica"
+            ],
+            "fonte": "Da confermare",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true,
+            "note_interne": "Inserire il numero reale"
+        },
+        {
+            "id": "contatti_003",
+            "categoria": "contatti",
+            "priorita": "alta",
+            "domanda": "Ha una pagina Facebook o Instagram la Casa di Quartiere?",
+            "risposta": "Sì! La Casa di Quartiere di Tuturano è presente su Facebook con la pagina ufficiale 'Casa di Quartiere Gala House'. Seguila per restare aggiornato su eventi, corsi e tutte le novità della comunità. Attraverso la pagina vengono comunicati eventi, iniziative e aggiornamenti in tempo reale.",
+            "keywords": [
+                "facebook",
+                "instagram",
+                "social",
+                "pagina",
+                "gala house",
+                "galahouse",
+                "seguire",
+                "post",
+                "aggiornamenti",
+                "social media"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2026-02-25",
+            "attiva": true
+        },
+        {
+            "id": "contatti_004",
+            "categoria": "contatti",
+            "priorita": "media",
+            "domanda": "Chi devo contattare per organizzare un evento alla Casa di Quartiere?",
+            "risposta": "Per organizzare un evento presso la Casa di Quartiere di Tuturano, e' necessario contattare il referente eventi della struttura. La richiesta va fatta con un congruo anticipo per verificare la disponibilita' degli spazi e concordare le modalita'. Contattare la segreteria per avere il recapito del referente eventi.",
+            "keywords": [
+                "evento",
+                "organizzare",
+                "festa",
+                "manifestazione",
+                "referente eventi",
+                "affitto"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "ilcurro_contatti_01",
+            "categoria": "contatti",
+            "priorita": "alta",
+            "domanda": "Come posso contattare l'Associazione IL CURRO-APS?",
+            "risposta": "Puoi contattare l'Associazione di Promozione Sociale 'IL CURRO-APS' telefonicamente ai numeri 349 8195650 e 347 3795435, oppure via email all'indirizzo associazioneilcurro@libero.it. L'associazione è presente anche su Facebook e Instagram.",
+            "keywords": [
+                "il curro",
+                "curro",
+                "contatti",
+                "telefono",
+                "email",
+                "social",
+                "facebook",
+                "instagram",
+                "chiamare",
+                "scrivere"
+            ],
+            "fonte": "Brochure IL CURRO-APS",
+            "data_aggiornamento": "2026-02-26",
+            "attiva": true
+        }
+    ]
+}

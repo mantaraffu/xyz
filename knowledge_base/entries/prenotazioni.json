@@ -1,0 +1,98 @@
+{
+    "categoria": "prenotazioni",
+    "descrizione": "Procedure di prenotazione spazi e iscrizione ai corsi.",
+    "entries": [
+        {
+            "id": "prenot_001",
+            "categoria": "prenotazioni",
+            "priorita": "alta",
+            "domanda": "Come prenoto uno spazio alla Casa di Quartiere?",
+            "risposta": "Per prenotare uno spazio alla Casa di Quartiere di Tuturano segui questi passaggi: 1) Contatta la segreteria per verificare la disponibilita' dello spazio desiderato nelle date di tuo interesse. 2) Comunica il tipo di attivita' che intendi svolgere (riunione, evento, corso, ecc.). 3) La segreteria ti indichera' la tariffa applicabile e le condizioni. 4) Conferma la prenotazione e procedi con il pagamento della cauzione o dell'acconto, se richiesto. 5) Il giorno dell'utilizzo, presenta la conferma di prenotazione alla segreteria.",
+            "keywords": [
+                "prenotare",
+                "prenotazione",
+                "riservare",
+                "affittare",
+                "sala",
+                "spazio",
+                "come prenoto"
+            ],
+            "fonte": "Regolamento interno",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "prenot_002",
+            "categoria": "prenotazioni",
+            "priorita": "alta",
+            "domanda": "Come disdico una prenotazione alla Casa di Quartiere?",
+            "risposta": "Per disdire una prenotazione, contatta la segreteria della Casa di Quartiere il prima possibile. Si consiglia di comunicare la disdetta con almeno 48 ore di anticipo. Per la politica di rimborso in caso di disdetta, contattare la segreteria che ti fornira' tutte le informazioni necessarie.",
+            "keywords": [
+                "disdire",
+                "cancellare",
+                "disdetta",
+                "annullare",
+                "prenotazione",
+                "rimborso"
+            ],
+            "fonte": "Regolamento interno",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "prenot_003",
+            "categoria": "prenotazioni",
+            "priorita": "media",
+            "domanda": "Quanto tempo prima devo prenotare uno spazio?",
+            "risposta": "Si consiglia di prenotare gli spazi con un anticipo di almeno una settimana per le attivita' regolari. Per eventi particolari o che richiedono allestimenti speciali, l'anticipo consigliato e' di almeno 2-3 settimane. In ogni caso, contattare la segreteria per verificare la disponibilita'.",
+            "keywords": [
+                "anticipo",
+                "quanto prima",
+                "tempistica",
+                "quando prenotare",
+                "preavviso"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "prenot_004",
+            "categoria": "prenotazioni",
+            "priorita": "media",
+            "domanda": "Cosa succede se il corso a cui voglio iscrivermi e' al completo?",
+            "risposta": "Se un corso ha raggiunto il numero massimo di partecipanti, e' possibile inserirsi in una lista d'attesa. In caso di rinunce, i posti vengono assegnati in ordine di lista. In alternativa, la segreteria puo' informarti sull'apertura di un nuovo turno del corso. Contatta la segreteria per maggiori informazioni.",
+            "keywords": [
+                "completo",
+                "pieno",
+                "lista d'attesa",
+                "posti esauriti",
+                "no posti",
+                "attendere"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "ilcurro_pren_01",
+            "categoria": "prenotazioni",
+            "priorita": "media",
+            "domanda": "Come posso prenotarmi per un'iniziativa de IL CURRO-APS?",
+            "risposta": "Se vuoi partecipare a un evento o iscriverti ad un'attività promossa da 'IL CURRO-APS', la via più rapida è contattare l'associazione telefonicamente ai numeri 349 8195650 o 347 3795435, oppure scrivere a associazioneilcurro@libero.it. Seguili anche sui social per capire come aderire alle loro manifestazioni culturali!",
+            "keywords": [
+                "prenotare",
+                "prenotazioni",
+                "partecipare",
+                "il curro",
+                "curro",
+                "iscriversi",
+                "come fare",
+                "aderire"
+            ],
+            "fonte": "Brochure IL CURRO-APS",
+            "data_aggiornamento": "2026-02-26",
+            "attiva": true
+        }
+    ]
+}

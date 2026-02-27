@@ -1,0 +1,100 @@
+{
+    "categoria": "costi_tariffe",
+    "descrizione": "Costi e tariffe per l'utilizzo degli spazi e la partecipazione alle attivita'.",
+    "entries": [
+        {
+            "id": "costi_001",
+            "categoria": "costi_tariffe",
+            "priorita": "alta",
+            "domanda": "Quanto costa utilizzare gli spazi della Casa di Quartiere?",
+            "risposta": "I costi per l'utilizzo degli spazi della Casa di Quartiere variano in base al tipo di spazio, alla durata dell'utilizzo e alla natura dell'attivita' (associativa, privata, commerciale). Sono previste tariffe agevolate per le associazioni del territorio e per le attivita' senza scopo di lucro. Per il listino prezzi aggiornato, contattare la segreteria della Casa di Quartiere.",
+            "keywords": [
+                "costo",
+                "prezzo",
+                "tariffa",
+                "quanto costa",
+                "affitto sala",
+                "noleggio spazio",
+                "pagamento"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true,
+            "note_interne": "Aggiornare con il listino prezzi ufficiale"
+        },
+        {
+            "id": "costi_002",
+            "categoria": "costi_tariffe",
+            "priorita": "alta",
+            "domanda": "Quanto costa iscriversi ai corsi della Casa di Quartiere?",
+            "risposta": "I costi di iscrizione ai corsi variano in base al tipo di corso, alla durata e al numero di lezioni. Molte attivita' hanno costi molto accessibili per favorire la partecipazione di tutti i cittadini. Per conoscere il costo di un corso specifico, contattare la segreteria con il nome del corso di interesse.",
+            "keywords": [
+                "costo corso",
+                "iscrizione",
+                "quanto costa il corso",
+                "prezzo corso",
+                "quota"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "costi_003",
+            "categoria": "costi_tariffe",
+            "priorita": "media",
+            "domanda": "Quali metodi di pagamento sono accettati?",
+            "risposta": "Per informazioni sui metodi di pagamento accettati dalla Casa di Quartiere (contanti, bonifico, carte, ecc.), contattare la segreteria che fornira' tutte le indicazioni necessarie per il pagamento dei corsi e dell'affitto degli spazi.",
+            "keywords": [
+                "pagamento",
+                "come pagare",
+                "bonifico",
+                "contanti",
+                "carta",
+                "bancomat",
+                "metodo di pagamento"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "costi_004",
+            "categoria": "costi_tariffe",
+            "priorita": "media",
+            "domanda": "Le attivita' della Casa di Quartiere sono gratuite?",
+            "risposta": "Alcune attivita' organizzate dalla Casa di Quartiere sono gratuite e aperte a tutti, mentre altre prevedono un costo di iscrizione contenuto. Le attivita' gratuite vengono comunicate attraverso i canali social e la bacheca della struttura. Per sapere quali attivita' sono attualmente gratuite, contattare la segreteria.",
+            "keywords": [
+                "gratis",
+                "gratuito",
+                "costo zero",
+                "attivita' gratuite",
+                "senza pagare",
+                "free"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "ilcurro_costi_01",
+            "categoria": "costi_tariffe",
+            "priorita": "media",
+            "domanda": "Quali sono i costi per partecipare alle attività de IL CURRO-APS?",
+            "risposta": "Per informazioni sui costi, le iscrizioni o le quote di partecipazione alle attività e formazioni promosse dall'Associazione 'IL CURRO-APS', si consiglia di contattarli direttamente ai numeri 349 8195650 o 347 3795435, o via email (associazioneilcurro@libero.it).",
+            "keywords": [
+                "costi",
+                "tariffe",
+                "il curro",
+                "curro",
+                "iscrizione",
+                "pagare",
+                "quota",
+                "prezzo"
+            ],
+            "fonte": "Brochure IL CURRO-APS",
+            "data_aggiornamento": "2026-02-26",
+            "attiva": true
+        }
+    ]
+}

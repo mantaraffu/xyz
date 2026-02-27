@@ -1,0 +1,83 @@
+nohup: ignoring input
+INFO:     Started server process [330434]
+INFO:     Waiting for application startup.
+2026-02-27 14:57:16 | INFO     | app.main | ============================================================
+2026-02-27 14:57:16 | INFO     | app.main | 🏠 Casa di Quartiere Tuturano — AI Assistant (Telegram)
+2026-02-27 14:57:16 | INFO     | app.main | ============================================================
+2026-02-27 14:57:16 | INFO     | app.rag | 🚀 Inizializzazione pipeline RAG...
+2026-02-27 14:57:16 | INFO     | app.rag | 📦 Caricamento modello embedding: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-02-27 14:57:16 | INFO     | sentence_transformers.SentenceTransformer | Use pytorch device_name: cpu
+2026-02-27 14:57:16 | INFO     | sentence_transformers.SentenceTransformer | Load pretrained SentenceTransformer: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+2026-02-27 14:57:19 | INFO     | app.rag | ✅ Modello embedding caricato
+2026-02-27 14:57:19 | INFO     | app.rag | 📦 Inizializzazione ChromaDB in: chroma_data
+2026-02-27 14:57:19 | ERROR    | chromadb.telemetry.product.posthog | Failed to send telemetry event ClientStartEvent: capture() takes 1 positional argument but 3 were given
+2026-02-27 14:57:19 | ERROR    | chromadb.telemetry.product.posthog | Failed to send telemetry event ClientCreateCollectionEvent: capture() takes 1 positional argument but 3 were given
+2026-02-27 14:57:19 | INFO     | app.rag | ✅ ChromaDB pronto — 45 documenti in collezione
+2026-02-27 14:57:19 | INFO     | httpx | HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2026-02-27 14:57:19 | INFO     | app.rag | ✅ Ollama connesso — modello: qwen2.5:1.5b
+2026-02-27 14:57:19 | INFO     | app.rag | 🎉 Pipeline RAG inizializzato con successo!
+2026-02-27 14:57:19 | INFO     | app.rag | 📂 Trovati 8 file nel knowledge base
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.45it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.44it/s]
+2026-02-27 14:57:19 | INFO     | app.rag |   ✅ corsi_attivita.json: 6 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.26it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.25it/s]
+2026-02-27 14:57:19 | INFO     | app.rag |   ✅ costi_tariffe.json: 5 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.35it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.35it/s]
+2026-02-27 14:57:20 | INFO     | app.rag |   ✅ informazioni_generali.json: 8 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.33it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  3.33it/s]
+2026-02-27 14:57:20 | INFO     | app.rag |   ✅ spazi.json: 6 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.66it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  5.66it/s]
+2026-02-27 14:57:20 | INFO     | app.rag |   ✅ prenotazioni.json: 5 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.51it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  4.51it/s]
+2026-02-27 14:57:21 | INFO     | app.rag |   ✅ regolamento.json: 6 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.68it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.68it/s]
+2026-02-27 14:57:21 | INFO     | app.rag |   ✅ eventi.json: 4 entries caricate
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.19it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  6.18it/s]
+2026-02-27 14:57:21 | INFO     | app.rag |   ✅ contatti.json: 5 entries caricate
+2026-02-27 14:57:21 | INFO     | app.rag | 📊 Totale entries caricate: 45
+2026-02-27 14:57:21 | INFO     | app.main | 📚 Knowledge base: 45 entries caricate
+/home/xyz/.gemini/antigravity/scratch/casa_quartiere_bot/gioco/wizard.py:428: PTBUserWarning: If 'per_message=False', 'CallbackQueryHandler' will not be tracked for every message. Read this FAQ entry to learn more about the per_* settings: https://github.com/python-telegram-bot/python-telegram-bot/wiki/Frequently-Asked-Questions#what-do-the-per_-settings-in-conversationhandler-do.
+  return ConversationHandler(
+2026-02-27 14:57:21 | INFO     | app.telegram_bot | ✅ Bot Telegram configurato con tutti gli handler
+2026-02-27 14:57:21 | INFO     | app.main | 🔄 Modalita' POLLING — nessun URL pubblico necessario
+2026-02-27 14:57:21 | INFO     | httpx | HTTP Request: POST https://api.telegram.org/bot8593041029:AAEhY6s2dmMNWZm6YRX__6VZISaomS1Wrec/getMe "HTTP/1.1 200 OK"
+2026-02-27 14:57:21 | INFO     | httpx | HTTP Request: POST https://api.telegram.org/bot8593041029:AAEhY6s2dmMNWZm6YRX__6VZISaomS1Wrec/setMyCommands "HTTP/1.1 200 OK"
+2026-02-27 14:57:21 | INFO     | app.telegram_bot | ✅ Menu comandi Telegram impostato
+2026-02-27 14:57:21 | INFO     | telegram.ext.Application | Application started
+2026-02-27 14:57:21 | INFO     | httpx | HTTP Request: POST https://api.telegram.org/bot8593041029:AAEhY6s2dmMNWZm6YRX__6VZISaomS1Wrec/deleteWebhook "HTTP/1.1 200 OK"
+2026-02-27 14:57:21 | INFO     | app.main | ✅ Bot Telegram in polling — in attesa di messaggi...
+2026-02-27 14:57:22 | INFO     | httpx | HTTP Request: POST https://api.telegram.org/bot8593041029:AAEhY6s2dmMNWZm6YRX__6VZISaomS1Wrec/getMe "HTTP/1.1 200 OK"
+2026-02-27 14:57:22 | INFO     | app.main | 🤖 Bot attivo: @tuturanobot (Tutulacchi)
+2026-02-27 14:57:22 | INFO     | app.main | 🟢 Sistema pronto!
+2026-02-27 14:57:22 | INFO     | app.main | 📱 WhatsApp Cloud API attivo — webhook: /whatsapp/webhook
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8000): address already in use
+INFO:     Waiting for application shutdown.
+2026-02-27 14:57:26 | INFO     | httpx | HTTP Request: POST https://api.telegram.org/bot8593041029:AAEhY6s2dmMNWZm6YRX__6VZISaomS1Wrec/getUpdates "HTTP/1.1 409 Conflict"
+2026-02-27 14:57:26 | ERROR    | telegram.ext.Updater | Error while calling `get_updates` one more time to mark all fetched updates as read: %s. Suppressing error to ensure graceful shutdown. When polling for updates is restarted, updates may be fetched again. Please adjust timeouts via `ApplicationBuilder` or the parameter `get_updates_request` of `Bot`.
+Traceback (most recent call last):
+  File "/home/xyz/.gemini/antigravity/scratch/casa_quartiere_bot/venv/lib/python3.12/site-packages/telegram/ext/_updater.py", line 432, in _get_updates_cleanup
+    await self.bot.get_updates(
+  File "/home/xyz/.gemini/antigravity/scratch/casa_quartiere_bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 650, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xyz/.gemini/antigravity/scratch/casa_quartiere_bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 4480, in get_updates
+    await self._post(
+  File "/home/xyz/.gemini/antigravity/scratch/casa_quartiere_bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/xyz/.gemini/antigravity/scratch/casa_quartiere_bot/venv/lib/python3.12/site-packages/telegram/ext/_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xyz/.gemini/antigravity/scratch/casa_quartiere_bot/venv/lib/python3.12/site-packages/telegram/_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/xyz/.gemini/antigravity/scratch/casa_quartiere_bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/xyz/.gemini/antigravity/scratch/casa_quartiere_bot/venv/lib/python3.12/site-packages/telegram/request/_baserequest.py", line 385, in _request_wrapper
+    raise Conflict(message)
+telegram.error.Conflict: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-02-27 14:57:26 | INFO     | telegram.ext.Application | Application is stopping. This might take a moment.
+2026-02-27 14:57:26 | INFO     | telegram.ext.Application | Application.stop() complete
+2026-02-27 14:57:26 | INFO     | app.main | 🔴 Sistema arrestato
+INFO:     Application shutdown complete.

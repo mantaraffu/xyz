@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Base — Casa di Quartiere Tuturano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-icon">🏠</div>
+            <div class="logo-text">
+                <span class="logo-title">Casa di Quartiere</span>
+                <span class="logo-subtitle">Tuturano</span>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-label">Principale</div>
+            <a href="/" class="nav-item">
+                <span class="nav-icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="/kb" class="nav-item active">
+                <span class="nav-icon">📚</span>
+                <span>Knowledge Base</span>
+            </a>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-label">Strumenti</div>
+            <a href="/#test-section" class="nav-item">
+                <span class="nav-icon">🧪</span>
+                <span>Testa il Bot</span>
+            </a>
+            <a href="/health" class="nav-item" target="_blank">
+                <span class="nav-icon">💚</span>
+                <span>Health Check</span>
+            </a>
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="user-badge">
+                <span class="user-icon">👤</span>
+                <span>{{ username }}</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+            <h1 class="page-title">📚 Knowledge Base</h1>
+            <div class="top-bar-actions">
+                <span class="status-pill info">{{ kb_stats.totale_entries }} entries totali</span>
+            </div>
+        </header>
+
+        <!-- Add New Entry -->
+        <section class="card accent-card">
+            <div class="card-header">
+                <h2>➕ Aggiungi Nuova Entry</h2>
+                <button class="btn btn-ghost" onclick="toggleAddForm()">Apri/Chiudi</button>
+            </div>
+            <div class="card-body" id="add-form-body" style="display:none;">
+                <form id="add-entry-form" class="entry-form" onsubmit="addEntry(event)">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="categoria">Categoria</label>
+                            <select id="categoria" name="categoria" required>
+                                {% for cat in categories %}
+                                <option value="{{ cat }}">{{ cat | replace('_', ' ') | title }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="priorita">Priorita'</label>
+                            <select id="priorita" name="priorita">
+                                {% for pri in priorities %}
+                                <option value="{{ pri }}" {% if pri=='alta' %}selected{% endif %}>{{ pri | title }}
+                                </option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="domanda">Domanda (come la farebbe un cittadino)</label>
+                        <input type="text" id="domanda" name="domanda" required
+                            placeholder="Es: Quali sono gli orari di apertura della Casa di Quartiere?">
+                    </div>
+                    <div class="form-group">
+                        <label for="risposta">Risposta completa</label>
+                        <textarea id="risposta" name="risposta" required rows="4"
+                            placeholder="Es: La Casa di Quartiere di Tuturano e' aperta dal lunedi' al venerdi' dalle 9:00 alle 18:00..."></textarea>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="keywords">Parole chiave (separate da virgola)</label>
+                            <input type="text" id="keywords" name="keywords"
+                                placeholder="Es: orari, apertura, chiusura, quando">
+                        </div>
+                        <div class="form-group">
+                            <label for="fonte">Fonte</label>
+                            <input type="text" id="fonte" name="fonte" placeholder="Es: Segreteria Casa di Quartiere">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">
+                        💾 Salva Entry nel Knowledge Base
+                    </button>
+                </form>
+                <div id="add-feedback" class="feedback hidden"></div>
+            </div>
+        </section>
+
+        <!-- Summary per Categoria -->
+        <section class="card">
+            <div class="card-header">
+                <h2>📂 Riepilogo per Categoria</h2>
+            </div>
+            <div class="card-body">
+                {% if kb_stats.per_categoria %}
+                <div class="category-summary-grid">
+                    {% for cat, count in kb_stats.per_categoria.items() %}
+                    <div class="category-summary-card" onclick="filterByCategory('{{ cat }}')">
+                        <div class="cat-summary-count">{{ count }}</div>
+                        <div class="cat-summary-name">{{ cat | replace('_', ' ') | title }}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="empty-state">
+                    <span class="empty-icon">📭</span>
+                    <p>Knowledge base vuoto — aggiungi la prima entry!</p>
+                </div>
+                {% endif %}
+            </div>
+        </section>
+
+        <!-- Entries List -->
+        <section class="card">
+            <div class="card-header">
+                <h2>📋 Tutte le Entries</h2>
+                <div class="header-controls">
+                    <input type="text" id="search-entries" class="search-input" placeholder="🔍 Cerca entries..."
+                        oninput="filterEntries()">
+                    <select id="filter-category" class="filter-select" onchange="filterEntries()">
+                        <option value="">Tutte le categorie</option>
+                        {% for cat in categories %}
+                        <option value="{{ cat }}">{{ cat | replace('_', ' ') | title }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </div>
+            <div class="card-body">
+                {% if entries %}
+                <div class="entries-list" id="entries-list">
+                    {% for entry in entries %}
+                    <div class="entry-card" data-category="{{ entry.metadata.categoria }}"
+                        data-text="{{ entry.document | lower }}">
+                        <div class="entry-header">
+                            <span class="entry-category-tag">{{ entry.metadata.categoria | replace('_', ' ') }}</span>
+                            <span class="entry-priority priority-{{ entry.metadata.priorita }}">
+                                {{ entry.metadata.priorita }}
+                            </span>
+                            <button class="btn btn-danger btn-sm" onclick="deleteEntry('{{ entry.id }}')"
+                                title="Elimina entry">🗑️</button>
+                        </div>
+                        <div class="entry-question">
+                            <strong>D:</strong> {{ entry.metadata.domanda }}
+                        </div>
+                        <div class="entry-document">
+                            {{ entry.document[:300] }}{% if entry.document|length > 300 %}...{% endif %}
+                        </div>
+                        <div class="entry-meta">
+                            <span class="meta-id">ID: {{ entry.id }}</span>
+                            {% if entry.metadata.data_aggiornamento %}
+                            <span class="meta-date">📅 {{ entry.metadata.data_aggiornamento }}</span>
+                            {% endif %}
+                            {% if entry.metadata.fonte %}
+                            <span class="meta-source">📄 {{ entry.metadata.fonte }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% else %}
+                <div class="empty-state">
+                    <span class="empty-icon">📚</span>
+                    <p>Nessuna entry nel knowledge base</p>
+                    <p class="hint">Usa il form sopra per aggiungere le prime entries, oppure carica i file JSON dal
+                        terminale.</p>
+                </div>
+                {% endif %}
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/js/kb_manager.js"></script>
+</body>
+
+</html>

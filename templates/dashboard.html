@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa di Quartiere Tuturano — Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/dashboard.css">
+</head>
+
+<body>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-icon">🏠</div>
+            <div class="logo-text">
+                <span class="logo-title">Casa di Quartiere</span>
+                <span class="logo-subtitle">Tuturano</span>
+            </div>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-label">Principale</div>
+            <a href="/" class="nav-item active">
+                <span class="nav-icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="/kb" class="nav-item">
+                <span class="nav-icon">📚</span>
+                <span>Knowledge Base</span>
+            </a>
+        </div>
+
+        <div class="nav-section">
+            <div class="nav-label">Strumenti</div>
+            <a href="#test-section" class="nav-item" onclick="scrollToTest()">
+                <span class="nav-icon">🧪</span>
+                <span>Testa il Bot</span>
+            </a>
+            <a href="/health" class="nav-item" target="_blank">
+                <span class="nav-icon">💚</span>
+                <span>Health Check</span>
+            </a>
+            {% if bot_info and bot_info.link %}
+            <a href="{{ bot_info.link }}" class="nav-item" target="_blank">
+                <span class="nav-icon">🤖</span>
+                <span>Apri Bot Telegram</span>
+            </a>
+            {% endif %}
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="user-badge">
+                <span class="user-icon">👤</span>
+                <span>{{ username }}</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Top Bar -->
+        <header class="top-bar">
+            <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+            <h1 class="page-title">Dashboard</h1>
+            <div class="top-bar-actions">
+                {% if bot_info and bot_info.username %}
+                <a href="{{ bot_info.link }}" target="_blank" class="status-pill online" style="text-decoration:none;">
+                    🤖 @{{ bot_info.username }} — Attivo
+                </a>
+                {% else %}
+                <span class="status-pill online">🟢 Sistema Attivo</span>
+                {% endif %}
+            </div>
+        </header>
+
+        <!-- Bot Info Banner -->
+        {% if bot_info and bot_info.link %}
+        <section class="card accent-card" style="margin-bottom: 20px;">
+            <div class="card-body" style="display: flex; align-items: center; gap: 16px; padding: 16px 24px;">
+                <span style="font-size: 32px;">🤖</span>
+                <div>
+                    <div style="font-weight: 700; font-size: 16px; color: var(--text-accent);">
+                        Bot Telegram: @{{ bot_info.username }}
+                    </div>
+                    <div style="font-size: 13px; color: var(--text-secondary); margin-top: 2px;">
+                        I cittadini possono cercarlo su Telegram o aprire
+                        <a href="{{ bot_info.link }}" target="_blank" style="color: var(--accent-blue);">{{
+                            bot_info.link }}</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% endif %}
+
+        <!-- Stats Cards -->
+        <section class="stats-grid">
+            <div class="stat-card gradient-blue">
+                <div class="stat-icon">💬</div>
+                <div class="stat-content">
+                    <div class="stat-value">{{ metrics.total_messages }}</div>
+                    <div class="stat-label">Messaggi Totali</div>
+                </div>
+            </div>
+
+            <div class="stat-card gradient-green">
+                <div class="stat-icon">👥</div>
+                <div class="stat-content">
+                    <div class="stat-value">{{ metrics.total_conversations }}</div>
+                    <div class="stat-label">Utenti Unici</div>
+                </div>
+            </div>
+
+            <div class="stat-card gradient-orange">
+                <div class="stat-icon">⚡</div>
+                <div class="stat-content">
+                    <div class="stat-value">{{ "%.1f"|format(metrics.avg_response_time_ms) }}ms</div>
+                    <div class="stat-label">Tempo Medio Risposta</div>
+                </div>
+            </div>
+
+            <div class="stat-card gradient-purple">
+                <div class="stat-icon">📚</div>
+                <div class="stat-content">
+                    <div class="stat-value">{{ kb_stats.totale_entries }}</div>
+                    <div class="stat-label">Entries Knowledge Base</div>
+                </div>
+            </div>
+
+            <div class="stat-card gradient-red">
+                <div class="stat-icon">❓</div>
+                <div class="stat-content">
+                    <div class="stat-value">{{ metrics.unanswered_count }}</div>
+                    <div class="stat-label">Senza Risposta</div>
+                </div>
+            </div>
+
+            <div class="stat-card gradient-teal">
+                <div class="stat-icon">⏱️</div>
+                <div class="stat-content">
+                    <div class="stat-value">{{ "%.1f"|format(metrics.uptime_hours) }}h</div>
+                    <div class="stat-label">Uptime</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Two Column Layout -->
+        <section class="two-columns">
+            <!-- Categorie Knowledge Base -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>📂 Entries per Categoria</h2>
+                </div>
+                <div class="card-body">
+                    {% if kb_stats.per_categoria %}
+                    <div class="category-bars">
+                        {% for cat, count in kb_stats.per_categoria.items() %}
+                        <div class="category-bar-item">
+                            <div class="category-bar-label">
+                                <span class="cat-name">{{ cat | replace('_', ' ') | title }}</span>
+                                <span class="cat-count">{{ count }}</span>
+                            </div>
+                            <div class="category-bar-track">
+                                <div class="category-bar-fill"
+                                    style="width: {{ (count / kb_stats.totale_entries * 100) if kb_stats.totale_entries > 0 else 0 }}%">
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <div class="empty-state">
+                        <span class="empty-icon">📭</span>
+                        <p>Nessuna entry nel knowledge base</p>
+                        <a href="/kb" class="btn btn-primary">Aggiungi Entries</a>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Top Categorie Richieste -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>🔥 Categorie Piu' Richieste</h2>
+                </div>
+                <div class="card-body">
+                    {% if metrics.top_categories %}
+                    <div class="top-list">
+                        {% for cat, count in metrics.top_categories.items() %}
+                        <div class="top-list-item">
+                            <span class="top-rank">#{{ loop.index }}</span>
+                            <span class="top-name">{{ cat | replace('_', ' ') | title }}</span>
+                            <span class="top-count">{{ count }} richieste</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    {% else %}
+                    <div class="empty-state">
+                        <span class="empty-icon">📊</span>
+                        <p>Nessun dato disponibile ancora</p>
+                        <p class="hint">Le statistiche appariranno dopo le prime conversazioni</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Activity -->
+        <section class="card">
+            <div class="card-header">
+                <h2>📋 Attivita' Recente</h2>
+            </div>
+            <div class="card-body">
+                {% if recent %}
+                <div class="activity-table-wrapper">
+                    <table class="activity-table">
+                        <thead>
+                            <tr>
+                                <th>Orario</th>
+                                <th>Utente</th>
+                                <th>Categorie</th>
+                                <th>Fonti</th>
+                                <th>Similarita'</th>
+                                <th>Tempo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for conv in recent | reverse %}
+                            <tr>
+                                <td class="td-time">{{ conv.timestamp[11:19] if conv.timestamp else '—' }}</td>
+                                <td>{{ conv.user_id }}</td>
+                                <td>
+                                    {% for cat in conv.categories_used[:2] %}
+                                    <span class="tag">{{ cat }}</span>
+                                    {% endfor %}
+                                </td>
+                                <td class="td-center">{{ conv.num_sources }}</td>
+                                <td class="td-center">
+                                    <span
+                                        class="similarity-badge {% if conv.avg_similarity > 0.7 %}high{% elif conv.avg_similarity > 0.4 %}medium{% else %}low{% endif %}">
+                                        {{ "%.0f"|format(conv.avg_similarity * 100) }}%
+                                    </span>
+                                </td>
+                                <td class="td-time">{{ "%.0f"|format(conv.response_time_ms) }}ms</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <div class="empty-state">
+                    <span class="empty-icon">💤</span>
+                    <p>Nessuna conversazione registrata</p>
+                    <p class="hint">In attesa del primo messaggio su Telegram...</p>
+                </div>
+                {% endif %}
+            </div>
+        </section>
+
+        <!-- Test Section -->
+        <section class="card" id="test-section">
+            <div class="card-header">
+                <h2>🧪 Testa il Bot</h2>
+            </div>
+            <div class="card-body">
+                <div class="test-chat">
+                    <div class="chat-input-area">
+                        <input type="text" id="test-input" class="chat-input"
+                            placeholder="Scrivi una domanda di test..." onkeydown="if(event.key==='Enter')sendTest()">
+                        <button class="btn btn-primary" onclick="sendTest()">Invia</button>
+                    </div>
+                    <div id="test-result" class="test-result hidden">
+                        <div class="result-section">
+                            <div class="result-label">Risposta:</div>
+                            <div id="test-response" class="result-text"></div>
+                        </div>
+                        <div class="result-meta">
+                            <span id="test-time" class="meta-pill">⏱️ —</span>
+                            <span id="test-docs" class="meta-pill">📄 —</span>
+                        </div>
+                        <div id="test-sources" class="result-sources"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/static/js/dashboard.js"></script>
+</body>
+
+</html>

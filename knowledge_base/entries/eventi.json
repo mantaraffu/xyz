@@ -1,0 +1,80 @@
+{
+    "categoria": "eventi",
+    "descrizione": "Eventi, feste di quartiere e attivita' speciali.",
+    "entries": [
+        {
+            "id": "eventi_001",
+            "categoria": "eventi",
+            "priorita": "media",
+            "domanda": "Come posso sapere quali eventi ci sono alla Casa di Quartiere?",
+            "risposta": "Per conoscere gli eventi in programma alla Casa di Quartiere di Tuturano, puoi: seguire la pagina social ufficiale dove vengono pubblicati tutti gli aggiornamenti, contattare la segreteria, oppure visitare la bacheca informativa presente all'ingresso della struttura. Gli eventi includono feste di quartiere, mercatini, presentazioni di libri, proiezioni cinematografiche e molto altro.",
+            "keywords": [
+                "eventi",
+                "programma",
+                "calendario",
+                "cosa c'e'",
+                "prossimi eventi",
+                "feste"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "eventi_002",
+            "categoria": "eventi",
+            "priorita": "media",
+            "domanda": "Posso organizzare un evento privato alla Casa di Quartiere?",
+            "risposta": "Si', e' possibile organizzare eventi privati o associativi presso la Casa di Quartiere di Tuturano, previa prenotazione e autorizzazione. I passaggi sono: 1) Contattare il referente eventi della struttura. 2) Descrivere il tipo di evento, la data e il numero previsto di partecipanti. 3) Ricevere conferma sulla disponibilita' dello spazio e sulle condizioni economiche. 4) Formalizzare la prenotazione. Per eventi che coinvolgono musica amplificata o somministrazione di alimenti, potrebbero essere necessarie autorizzazioni aggiuntive.",
+            "keywords": [
+                "organizzare evento",
+                "evento privato",
+                "festa",
+                "celebrazione",
+                "compleanno",
+                "riunione"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "eventi_003",
+            "categoria": "eventi",
+            "priorita": "bassa",
+            "domanda": "Come posso diventare volontario alla Casa di Quartiere?",
+            "risposta": "La Casa di Quartiere accoglie con entusiasmo nuovi volontari! Se desideri contribuire alla vita della comunita', puoi contattare la segreteria per conoscere i ruoli disponibili e le modalita' di partecipazione. Le attivita' di volontariato possono includere: supporto nell'organizzazione di eventi, aiuto nelle attivita' didattiche, accoglienza dei visitatori e comunicazione sui social media.",
+            "keywords": [
+                "volontario",
+                "volontariato",
+                "aiutare",
+                "partecipare",
+                "contribuire",
+                "dare una mano"
+            ],
+            "fonte": "Segreteria",
+            "data_aggiornamento": "2025-01-15",
+            "attiva": true
+        },
+        {
+            "id": "ilcurro_ev_01",
+            "categoria": "eventi",
+            "priorita": "alta",
+            "domanda": "Che tipo di eventi o iniziative organizza IL CURRO-APS?",
+            "risposta": "IL CURRO-APS è fermamente convinta che 'siamo circondati da tanta bellezza' e, per farla apprezzare a tutti, organizza iniziative coinvolgenti con persone talentuose. L'associazione, che ha come intento 'Muoviamo la Cultura', crea eventi culturali in rete e collabora da anni con altre realtà e istituzioni, supportata anche dall'iscrizione al Centro Servizi di Volontariato (CSV) di Brindisi-Lecce.",
+            "keywords": [
+                "eventi",
+                "il curro",
+                "curro",
+                "iniziative",
+                "cultura",
+                "collaborazioni",
+                "fare rete",
+                "spettacoli"
+            ],
+            "fonte": "Brochure IL CURRO-APS",
+            "data_aggiornamento": "2026-02-26",
+            "attiva": true
+        }
+    ]
+}
